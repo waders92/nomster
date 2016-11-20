@@ -5,6 +5,32 @@ Bootstrap
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+/*****************************
+Nav Bar
+*****************************/
+
+
+.navbar.navbar-inverse {
+  background: url('/assets/congruent_outline.png');
+  border-radius: 0;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+
+
+
+
+
+
+
+
+
+/*****************************
+Body
+*****************************/
+
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -21,4 +47,11 @@ Bootstrap
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+
+
+body {
+  background: url('/assets/fresh_snow.png');
+  font-family: 'Lato', sans-serif;
 }
