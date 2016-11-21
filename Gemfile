@@ -33,6 +33,9 @@ gem 'spring',        group: :development
 # rails 12 gem
 gem 'rails_12factor', group: :production
 
+#paginate gem
+gem 'will_paginate', '> 3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
