@@ -17,6 +17,8 @@ Rails.application.routes.draw do
  
   root 'places#index'
   
+  resources :places
+  
   # Example resource route with options:
   #   resources :products do
   #     member do
