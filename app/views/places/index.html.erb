@@ -1,8 +1,6 @@
 
 
-<%= will_paginate @places %>
-
-<br />
+<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 <% @places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
