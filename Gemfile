@@ -42,6 +42,12 @@ gem 'simple_form'
 #user authentication gem
 gem 'devise', '>= 3.2.4'
 
+#geocoding map info
+gem "geocoder", "1.3.4"
+
+#figaro gem
+gem "figaro", ">= 1.0.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
