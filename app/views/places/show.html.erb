@@ -5,16 +5,13 @@
   <p><%= @place.description %></p>
     
     
-<style>
+<!--<style>
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
-      #map {
-        height: 300px;
-      }
- </style>
+</style>-->
   
     
 
@@ -22,10 +19,10 @@
     
     <script>
       function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
           center: myLatLng
         });
 
@@ -36,10 +33,8 @@
         });
       }
     </script>
-   
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxa8HAZQzLh_a4HLEEbQv0o2S9zR7I7Wg&
-    callback=initMap">
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxa8HAZQzLh_a4HLEEbQv0o2S9zR7I7Wg&callback=initMap">
     </script>  
     
     
