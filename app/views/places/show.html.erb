@@ -4,16 +4,6 @@
   <br/><br/>
   <p><%= @place.description %></p>
     
-    
-<!--<style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-</style>-->
-  
-    
 
 <% if @place.latitude.present? && @place.longitude.present? %>
     
@@ -52,12 +42,6 @@
 </div>
 
 
-
-<!-- Button trigger modal -->
-<button class="btn btn-primary active" data-toggle="modal" data-target="#myModal">
-  Add a comment
-</button>
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -82,16 +66,23 @@
 
   
   
-<h1>Comments</h1>
+<div class="col-xs-10 col-xs-offset-1">
+<h1 class="pull-left comment">Comments</h1>
+<!-- Button trigger modal -->
+<button class="btn btn-primary active pull-right" data-toggle="modal" data-target="#myModal">
+  Add a comment
+</button>
+</div>
+<div class="clear"></div>
 
 <% @place.comments.each do |comment| %>
-  <div>
+  <div class="col-xs-10 col-xs-offset-1">
     <blockquote>
       <% if comment.humanized_rating.present? %>
         <b><%= comment.humanized_rating %></b> -
       <% end %>  
       <%= comment.message %>
-      <small><%= comment.user.email %></small>
+      <small class="email"><%= comment.user.email %></small>
     </blockquote>
   </div>
 <% end %>
