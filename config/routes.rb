@@ -18,7 +18,9 @@ Rails.application.routes.draw do
  
   root 'places#index'
   
-  resources :places
+  resources :places do
+    resources :comments, only: :create
+  end
   
   # Example resource route with options:
   #   resources :products do
