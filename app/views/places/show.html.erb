@@ -15,7 +15,7 @@
   
     
 
- 
+<% if @place.latitude.present? && @place.longitude.present? %>
     
     <script>
       function initMap() {
@@ -38,9 +38,10 @@
     </script>  
     
     
-    <div id="map"></div> 
+    <div id="map"></div>
+    <% end %>
     
-    
+  <br />
     
   <div class="pull-right">
     <% if current_user && current_user == @place.user %>
