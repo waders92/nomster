@@ -5,4 +5,8 @@ class PhotosController < ApplicationController
     @place.photos.create(caption_params.merge(user: current_user))
     redirect_to place_path(@place)
   end
+
+    def caption_params
+    params.require(:caption).permit(:caption)
+    end
 end
