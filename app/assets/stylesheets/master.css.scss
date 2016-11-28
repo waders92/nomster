@@ -149,7 +149,7 @@ Block Quotes
 *****************************/
 
 blockquote {
-  color: white;
+  color: black;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D";
@@ -167,12 +167,19 @@ blockquote p {
 }
 
 .email {
-  color: white;
+  color: black;
 }
 
 .comment {
-  color: white;
+  color: black;
 }
 
+.lastquote {
+  color: black;
+}
+
+.lastemail {
+  color: black;
+}
 
 
