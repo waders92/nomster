@@ -51,6 +51,9 @@ gem "figaro", ">= 1.0.0"
 #turbolinks removal
 gem 'turbolinks'
 
+#carrierwave
+gem 'carrierwave', '>=1.0.0rc', '<2.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
