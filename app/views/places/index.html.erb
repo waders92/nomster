@@ -18,7 +18,7 @@
       <% if place.comments.last.humanized_rating.present? %>
         <b><%= place.comments.last.humanized_rating %></b> -
       <% end %>  
-      <%= last_comment(place).message %>
+      <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
     </blockquote>
   </div>
