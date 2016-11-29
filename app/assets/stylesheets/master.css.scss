@@ -152,6 +152,7 @@ blockquote {
   color: black;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
+  font-size: 1.25em;
   quotes: "\201C""\201D";
 }
 blockquote:before {
@@ -194,4 +195,18 @@ Buttons
 /*****************************
 Viositor Images
 *****************************/
+
+.userphoto {
+  color: snow;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.booyah-box-photo {
+  color: snow;
+}
+ 
+.caption {
+  text-align: center;
+}
 
