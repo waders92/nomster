@@ -14,23 +14,28 @@ Nav Bar
 
 
 .navbar.navbar-inverse {
-  background: url('/assets/congruent_outline.png');
+  background: url('/assets/random_grey_variations.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #2AADD1;
-  font-family: 'jenna_sueregular';
+  font-family: 'kingthings_calligraphica_2Rg';
   font-size: 40px;
+  color: oldlace;
 }
 
+
 .glyphicon {
-  color: white;
+  color: snow;
 }
 
 .navbar-right {
   font-family: 'quicksandregular';
+}
+
+.navbar a {
+    color: snow;
 }
 
 
@@ -59,7 +64,8 @@ Pagination
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    background-color: #bebebe;
+    background-color: #495357;
+    color: snow;
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
@@ -98,21 +104,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-  background: url('/assets/grey_wash_wall.png');
+  background: url('/assets/concrete_wall_2.png');
   font-family: 'quicksandregular';
   font-size: 1.5em;
 }
-
-
-/*****************************
-Alerts
-*****************************/
-
-/*.alert-warning {
-  background-color: transparent;
-  color: white;
-  border: none;
-} */
 
 
 /*****************************
@@ -132,7 +127,7 @@ Maps
 
 
 #map {
-height: 400px;
+height: 300px;
 }
 
 
@@ -172,7 +167,7 @@ blockquote p {
 }
 
 .comment {
-  color: snow;
+  color: black;
 }
 
 .lastquote {
@@ -197,16 +192,14 @@ Viositor Images
 *****************************/
 
 .userphoto {
-  color: snow;
+  color: black;
   margin-top: 20px;
-  text-align: center;
-}
+  margin-left: 8px;
+  }
 
 .booyah-box-photo {
-  color: snow;
+  color: black;
 }
  
-.caption {
-  text-align: center;
-}
+
 
