@@ -8,7 +8,7 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
   
- <%#= image_tag photo.picture, class: 'img-responsive' %>
+ <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
     
 <% if place.comments.present? %>
   <div class="booyah-box col-xs-12">
