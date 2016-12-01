@@ -8,9 +8,11 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
   
- <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
-    
-<% if place.comments.present? %>
+  <% if place.photos.present? %>
+  <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
+  <% end %>
+
+    <% if place.comments.present? %>
   <div class="booyah-box col-xs-12">
     <blockquote>
       <% if place.comments.last.humanized_rating.present? %>
