@@ -39,10 +39,19 @@
   </a>
 </div>
 
+<div class="infobar">
+<h3 class="welcome">Welcome to The Links Report!</h3>
+  <hr />
+    <p class="joinhere">
+    <b>The best place to get a golf course review.  Please join <%= link_to 'HERE', new_user_registration_path %> today to contribute!</b>
+    </p>
+</div>
+
+<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 
 <% @places.each do |place| %>
-  <div class="booyah-box col-xs-10 col-xs-offset-1">
+<div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1 class="titles"><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
@@ -62,9 +71,10 @@
     </blockquote>
   </div>
 <% end %> 
-
-  </div>
+</div>
 
 <% end %>
 
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
+
+

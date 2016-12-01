@@ -95,6 +95,27 @@ Body
 *****************************/
 
 
+.joinhere a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.joinhere a {
+  	border-style: solid;
+	border-color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.joinhere a:hover {
+  color: white;
+  background-color: #515259;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -113,7 +134,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.welcome {
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'quicksandregular';
+  font-weight: bold;
+}
 
+.infobar {
+  text-align: center;
+}
 
 body {
   background: url('/assets/concrete_wall_2.png');
@@ -198,6 +228,16 @@ Buttons
   margin-left: 8px;
 }
 
+/*****************************
+Alerts
+*****************************/
+
+.alert {
+  margin-top: 25px;
+}
+
+
+
 
 
 /*****************************
@@ -219,7 +259,7 @@ Carousel
 *****************************/
 
 .carousel-inner > .item >img, .carousel-inner >.item > a > img {
-  max-height: 375px;
+  max-height: 335px;
   width: 100%;
 }
 
