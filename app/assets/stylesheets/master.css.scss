@@ -22,7 +22,7 @@ Nav Bar
 .navbar-inverse .navbar-brand {
   font-family: 'kingthings_calligraphica_2Rg';
   font-size: 40px;
-  color: oldlace;
+  color: darkgrey;
 }
 
 
@@ -34,10 +34,21 @@ Nav Bar
   font-family: 'quicksandregular';
 }
 
-.navbar a {
-    color: snow;
+
+
+/*****************************
+Index page listings
+*****************************/
+
+.titles a{
+  color: black;
 }
 
+.titles a:hover {
+  text-decoration: none;
+  color: firebrick;
+  background-color: antiquewhite;
+}
 
 /*****************************
 Pagination
@@ -185,6 +196,7 @@ Buttons
 .comment {
   margin-left: 8px;
 }
+
 
 
 /*****************************

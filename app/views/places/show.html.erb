@@ -35,6 +35,10 @@
     
 <div class="pull-right">
     <% if current_user && current_user == @place.user %>
+    
+    <button class="btn btn-primary active pic_button" data-toggle="modal" data-target="#pictureModal">
+    Add a Photo
+    </button>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary btn sm active' %>
     <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger btn sm active' %>
     <% end %>
@@ -100,9 +104,9 @@
   <button class="btn btn-primary active pull-right comment" data-toggle="modal" data-target="#myModal">
   Add a comment
   </button>
-  <button class="btn btn-primary active pull-right" data-toggle="modal" data-target="#pictureModal">
+  <!--<button class="btn btn-primary active pull-right" data-toggle="modal" data-target="#pictureModal">
   Add a Photo
-  </button>
+  </button>-->
 </div>
 
 <div class="clear"></div>
