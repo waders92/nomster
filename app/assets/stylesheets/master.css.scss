@@ -23,9 +23,13 @@ Nav Bar
 .navbar-inverse .navbar-brand {
   font-family: 'kingthings_calligraphica_2Rg';
   font-size: 40px;
-  color: darkgrey;
+  color: snow;
 }
 
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-brand:focus {
+  color: black;
+}
 
 .glyphicon {
   color: snow;
@@ -35,7 +39,19 @@ Nav Bar
   font-family: 'quicksandregular';
 }
 
+.navbar a {
+  font-weight: bold;
+  font-size: 1.05em;
+    }
 
+.navbar-inverse .navbar-nav > li > a {
+  color: snow;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: black;
+}
 
 /*****************************
 Index page listings
