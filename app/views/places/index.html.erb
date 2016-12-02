@@ -40,11 +40,11 @@
 </div>
 
 <div class="infobar">
-<h3 class="welcome">Welcome to The Links Report!</h3>
-  <hr />
-    <p class="joinhere">
-    <b>The best place to get a golf course review.  Have a review? <br />Please join today to contribute!</b>
-    </p>
+  <h3 class="welcome">Welcome to The Links Report!</h3>
+    <hr />
+      <p class="joinhere">
+      <b>The best place to get a golf course review.  Have a review? <br />Please join today to contribute!</b>
+      </p>
 </div>
 
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
@@ -56,17 +56,17 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
   
-  <% if place.photos.present? %>
-  <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
-  <% end %>
+          <% if place.photos.present? %>
+          <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
+          <% end %>
 
-    <% if place.comments.present? %>
-  <div class="booyah-box col-xs-12">
-    <blockquote>
-      <% if place.comments.last.humanized_rating.present? %>
-        <b><%= place.comments.last.humanized_rating %></b> -
-      <% end %>  
-      <%= place.comments.last.message %>
+      <% if place.comments.present? %>
+      <div class="booyah-box col-xs-12">
+        <blockquote>
+            <% if place.comments.last.humanized_rating.present? %>
+              <b><%= place.comments.last.humanized_rating %></b> -
+            <% end %>  
+          <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
     </blockquote>
   </div>
@@ -76,6 +76,6 @@
 <% end %>
 
 <div class="page">
-<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
+  <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
 
