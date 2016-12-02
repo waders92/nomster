@@ -18,25 +18,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'The Links Report!', root_path, class: 'navbar-brand' %>  
+      <%= link_to 'The Links Report', root_path, class: 'navbar-brand' %>  
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <%= link_to new_place_path do %>
-          <i class="glyphicon glyphicon-plus-sign"></i>
-          New Course
-          <i class="glyphicon glyphicon-flag"></i>
-          <% end %>
+         <i class="glyphicon glyphicon-flag"></i>
         </li>
       </ul>
-      
         <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
         <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
         <% else %>
+        <li><%= link_to 'Add Course', new_place_path %>  </li>
         <li><%= link_to 'Sign-In', new_user_session_path %></li>
         <li><%= link_to 'Join!', new_user_registration_path %></li>
         <% end %>
@@ -56,7 +52,28 @@
   
 <%= yield %>
 
+<section id="footer">
+    <div class="container-fluid">
+      <div class="col-xs-12">
+    	  <div class="end">
+    		<br />
+            <br />
+            <h5>© The Links Report - 2016</h5>
+            <br />
+            <br />
+          </div>	                                     
+      </div><!--end .col-md-12-->
+  	 </div><!--end .container-->
+</section><!--end #footer-->
   
+  
+  
+  <!--<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2016 - Site Built By Wade C.
+      </p>
+    </div>
+</div> --> 
   
   
 </body>

@@ -35,13 +35,20 @@ Nav Bar
   color: snow;
 }
 
+.glyphicon-flag:before {
+  font-size: 2.5em;
+  }
+
 .navbar-right {
   font-family: 'quicksandregular';
+}
+ul.nav.navbar-nav.navbar-right {
+  display: inline-block;
 }
 
 .navbar a {
   font-weight: bold;
-  font-size: 1.05em;
+  font-size: 1.0em;
     }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -73,8 +80,8 @@ Pagination
 
 .pagination {
   background-color: fff;
-  float: right;
   margin-right: 25px;
+  float: right;
   }
 
 .pagination a {
@@ -105,7 +112,6 @@ Pagination
 
 
 
-
 /*****************************
 Body
 *****************************/
@@ -127,11 +133,6 @@ Body
 }
 
 
-.joinhere a:hover {
-  color: white;
-  background-color: #515259;
-}
-
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -148,6 +149,10 @@ Body
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+h5 {
+   text-align: center;
 }
 
 .welcome {
@@ -168,6 +173,19 @@ body {
 }
 
 
+.end {
+  background-color: #1F2629;
+  color: snow;
+}
+
+
+ .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+}
+
 /*****************************
 Errors
 *****************************/
@@ -176,7 +194,7 @@ Errors
   color: #ff3333;
   background-color: #FFEEEE;
   border-radius: 3px;
-  padding:8px;
+  padding: 8px;
 }
 
 /*****************************
@@ -208,6 +226,7 @@ blockquote {
   font-size: 1.25em;
   quotes: "\201C""\201D";
 }
+
 blockquote:before {
   color: black;
   content: open-quote;
@@ -216,6 +235,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
@@ -251,9 +271,6 @@ Alerts
 .alert {
   margin-top: 25px;
 }
-
-
-
 
 
 /*****************************

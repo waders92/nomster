@@ -43,7 +43,7 @@
 <h3 class="welcome">Welcome to The Links Report!</h3>
   <hr />
     <p class="joinhere">
-    <b>The best place to get a golf course review.  Please join <%= link_to 'HERE', new_user_registration_path %> today to contribute!</b>
+    <b>The best place to get a golf course review.  Have a review? <br />Please join today to contribute!</b>
     </p>
 </div>
 
@@ -75,6 +75,7 @@
 
 <% end %>
 
+<div class="page">
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
-
+</div>
 
