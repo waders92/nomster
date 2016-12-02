@@ -30,6 +30,7 @@
       </ul>
         <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
+        <li><%= link_to 'My Profile', user_path(current_user) %></li>
         <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
         <% else %>
         <li><%= link_to 'Add Course', new_place_path %>  </li>
@@ -57,7 +58,7 @@
     <div class="container-fluid col-xs-12 end">
       <br />
       <br />
-      <h5>© The Links Report - 2016</h5>
+        <h5>© The Links Report - 2016</h5>
       <br />
       <br />
     </div>	                                     
