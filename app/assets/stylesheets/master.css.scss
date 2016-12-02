@@ -74,6 +74,16 @@ Index page listings
   background-color: #515259;
 }
 
+.text-center a{
+  color: black;
+}
+
+.text-center a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #515259;
+}
+
 /*****************************
 Pagination
 *****************************/
@@ -213,6 +223,7 @@ Forms
 *****************************/
 
 
+
 .useremail {
   word-wrap: break-word;
 }
@@ -300,8 +311,14 @@ Viositor Images
   width: 100%;
 }
 
+/*****************************
+User Page
+*****************************/
 
-
+.text-center {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 /*****************************
