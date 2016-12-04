@@ -307,9 +307,21 @@ Viositor Images
  
 
 .img-responsive {
-  max-height: 400px;
-  width: 100%;
+    width: 100%;
 }
+
+
+/*****************************
+Footer
+*****************************/
+
+.pga img {
+  height: 100px;
+  background: #1F2629;
+  color: #1F2629;
+}
+
+
 
 /*****************************
 User Page
@@ -326,8 +338,8 @@ Carousel
 *****************************/
 
 .carousel-inner > .item >img, .carousel-inner >.item > a > img {
-  max-height: 335px;
-  width: 100%;
+  object-fit: cover; 
+  overflow: hidden; 
 }
 
 .carousel {
@@ -358,6 +370,7 @@ Carousel
 **********/
 
 
-
-
+/*****************************
+Media Queries
+*****************************/
 
