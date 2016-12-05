@@ -40,11 +40,14 @@
 </div>
 
 <div class="infobar">
+  <br />
   <h3 class="welcome">Welcome to The Links Report!</h3>
     <hr />
       <p class="joinhere">
       <b>The best place to get a golf course review.  Have a review? <br />Please join today to contribute!</b>
       </p>
+    <hr />
+  <h3 class="text-centered welcome">Recent User Reviews</h3>
 </div>
 
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
@@ -78,4 +81,6 @@
 <div class="page">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
+
+
 
