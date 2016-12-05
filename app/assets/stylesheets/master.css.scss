@@ -101,9 +101,9 @@ Pagination
 
 .pagination {
   background-color: fff;
-  margin-right: 25px;
-  float: right;
-  }
+  text-align: center;
+ 
+}
 
 .pagination a {
   padding-left: 10px;
@@ -131,7 +131,11 @@ Pagination
     border-radius: 1em;
 }
 
-
+.center {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*****************************
 Body
@@ -321,8 +325,6 @@ Viositor Images
 .img-responsive {
     width: 100%;
 }
-
-
 
 
 /*****************************

@@ -4,7 +4,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
   
   def index
     #@places = Place.paginate(page: params[:page], per_page: 5)
-    @places = Place.order("created_at ASC").all.paginate(page: params[:page], per_page:5)
+    @places = Place.order("created_at DESC").all.paginate(page: params[:page], per_page:5)
   end
   
   def new

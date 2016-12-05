@@ -48,10 +48,12 @@
       </p>
     <hr />
   <h3 class="text-centered welcome">Recent User Reviews</h3>
+  <br />
 </div>
 
-<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
-
+<div class="center">
+  <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
+</div>
 
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
@@ -78,7 +80,7 @@
 
 <% end %>
 
-<div class="page">
+<div class="center">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
 
