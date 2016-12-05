@@ -35,7 +35,9 @@
        
           <% else %>
            
-        <li><%= link_to 'Add Course', new_place_path %>  </li> 
+        <%= link_to new_place_path, class: "btn btn-default btn-sm" do %>
+        <i class="glyphicon glyphicon-plus-sign">Add Course</i>
+        <% end %> 
         <li><%= link_to 'Sign-In', new_user_session_path %></li>
         <li><%= link_to 'Join!', new_user_registration_path %></li>
         <% end %>
@@ -61,7 +63,7 @@
       <br />
       <br />
         <div class="pga text-center">
-        <%= link_to image_tag('pga.png'), "http://wadecarlson.getforge.io", target: :_blank%>
+        <%= link_to image_tag('pga.png'), "https://github.com/waders92", target: :_blank%>
         <div>
         <br />
         <h5>© The Links Report - 2016</h5>

@@ -35,9 +35,20 @@ Nav Bar
   color: snow;
 }
 
-.glyphicon-flag:before {
-  font-size: 2.05em;
-  }
+i.glyphicon.glyphicon-plus-sign::before {
+  padding-right: 10px;
+  
+}
+
+a.btn.btn-default:hover {
+  background-color: black;
+}
+
+.btn-default {
+  background-color: transparent;
+  margin-top: 8px;
+  border-style: none;
+}
 
 .navbar-right {
   font-family: 'quicksandregular';
