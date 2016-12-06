@@ -34,10 +34,8 @@
         <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
         <li><%= link_to '+ Add Course', new_place_path %></li>        
           <% else %>
-           
-        <%= link_to new_place_path, class: "btn btn-default btn-sm" do %>
-        <i class="glyphicon glyphicon-plus-sign">Add Course</i>
-        <% end %> 
+          
+       
         <li><%= link_to 'Sign-In', new_user_session_path %></li>
         <li><%= link_to 'Join!', new_user_registration_path %></li>
         <% end %>
@@ -49,10 +47,11 @@
   
 
 <% if notice.present? %>  
-<p class="alert alert-info col-xs-2 col-xs-offset-1"><%= notice %></p>
+<p class="alert alert-info col-xs-12"><%= notice %></p>
 <% end %>
 <% if alert.present? %>
-<p class="alert alert-danger col-xs-4 col-xs-offset-1"><%= alert %></p>  
+<p class="alert alert-danger col-xs-12"><%= alert %></p>  
+<p class="alert alert-danger col-xs-12"><%= alert %></p>  
 <% end %>   
   
 <%= yield %>
@@ -62,7 +61,7 @@
       <br />
       <br />
         <div class="pga text-center">
-        <%= link_to image_tag('pga.png'), "#" %>
+        <%= link_to image_tag('pga.png'), "http://wadecarlson.getforge.io", target: :_blank %>
         <div>
         <br />
         <h5>© The Links Report - 2016</h5>

@@ -221,7 +221,18 @@ Errors
   background-color: #FFEEEE;
   border-radius: 3px;
   padding: 8px;
-}
+  }
+
+.alert {
+  height: 20px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-weight: 600;
+ }
 
 /*****************************
 Maps
