@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>The Links Report</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'The Links Report', root_path, class: 'navbar-brand' %>  
+      <%= link_to 'The Links Report', root_path, class: 'navbar-brand' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,29 +32,36 @@
         <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
         <li><%= link_to 'My Profile', user_path(current_user) %></li>
+        <li><%= link_to 'Add Course', new_place_path %></li>
         <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
-        <li><%= link_to '+ Add Course', new_place_path %></li>        
           <% else %>
-          
-       
+
+
         <li><%= link_to 'Sign-In', new_user_session_path %></li>
-        <li><%= link_to 'Join!', new_user_registration_path %></li>
+        <li><%= link_to 'Register', new_user_registration_path %></li>
         <% end %>
         <!--<li><a href="#">Link</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-  
 
-<% if notice.present? %>  
-<p class="alert alert-info col-xs-12"><%= notice %></p>
-<% end %>
-<% if alert.present? %>
-<p class="alert alert-danger col-xs-12"><%= alert %></p>  
-<p class="alert alert-danger col-xs-12"><%= alert %></p>  
-<% end %>   
-  
+<div id="box1">
+  <% if notice.present? %>
+  <p class="alert alert-info col-xs-12"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+  <p class="alert alert-danger col-xs-12"><%= alert %></p>
+  <p class="alert alert-danger col-xs-12"><%= alert %></p>
+  <% end %>
+</div>
+
+<script>
+$( ".test" ).click(function() {
+  $( "box1" ).slideUp( 500 );
+});
+</script>
+
 <%= yield %>
 
 <footer>
@@ -61,16 +69,14 @@
       <br />
       <br />
         <div class="pga text-center">
-        <%= link_to image_tag('pga.png'), "http://wadecarlson.getforge.io", target: :_blank %>
+        <%= image_tag('pga.png') %>
         <div>
         <br />
         <h5>© The Links Report - 2016</h5>
       <br />
       <br />
-    </div>	                                     
+    </div>
 </footer>
-  
+
 </body>
 </html>
-
-
