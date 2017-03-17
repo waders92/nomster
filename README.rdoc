@@ -1,4 +1,4 @@
-== README
+== The Links Report (Nomster)
 
 The Links Report is part of the Firehose curriculum
 
