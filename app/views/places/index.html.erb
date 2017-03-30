@@ -13,7 +13,7 @@
     <div class="item active">
       <%= image_tag 'slider1.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-       Hawaii 
+       Hawaii
       </div>
     </div>
     <div class="item">
@@ -25,9 +25,9 @@
     <div class="item">
       <%= image_tag 'slider3.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-      Ireland 
+      Ireland
       </div>
-    </div> 
+    </div>
   </div>
 
   <!-- Controls -->
@@ -39,15 +39,13 @@
   </a>
 </div>
 
-<div class="infobar">
+<div>
   <br />
-  <h3 class="welcome">Welcome to The Links Report!</h3>
+    <p class="joinhere text-center">
+      <b>Welcome to The Links Report! Have a golf course review? <br />Please join today to contribute!</b>
+    </p>
     <hr />
-      <p class="joinhere">
-      <b>The best place to get a golf course review.  Have a review? <br />Please join today to contribute!</b>
-      </p>
-    <hr />
-  <h3 class="text-centered welcome">Recent User Reviews</h3>
+  <h3 class="text-center">Recent User Reviews -</h3>
   <br />
 </div>
 
@@ -60,7 +58,7 @@
     <h3 class="titles"><%= link_to place.name, place_path(place) %></h3><br />
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
-  
+
           <% if place.photos.present? %>
           <%= image_tag place.photos.order(:id).last.picture, class: 'img-responsive' %>
           <% end %>
@@ -70,12 +68,12 @@
         <blockquote>
             <% if place.comments.last.humanized_rating.present? %>
               <b><%= place.comments.last.humanized_rating %></b> -
-            <% end %>  
+            <% end %>
           <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
     </blockquote>
   </div>
-<% end %> 
+<% end %>
 </div>
 
 <% end %>
@@ -83,6 +81,3 @@
 <div class="center">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
-
-
-

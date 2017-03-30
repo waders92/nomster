@@ -60,7 +60,7 @@ ul.nav.navbar-nav.navbar-right {
 .navbar a {
   font-weight: bold;
   font-size: 1.0em;
-    }
+}
 
 .navbar-inverse .navbar-nav > li > a {
   color: snow;
@@ -187,10 +187,6 @@ h5 {
   font-weight: bold;
 }
 
-.infobar {
-  text-align: center;
-}
-
 body {
   background: url('/assets/concrete_wall_2.png');
   font-family: 'quicksandregular';
@@ -203,6 +199,10 @@ body {
   color: snow;
   height: 150px;
   margin-top: 100px;
+}
+
+.fitz {
+  margin-bottom: 500px;
 }
 
 
