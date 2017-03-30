@@ -49,13 +49,12 @@ gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
 
 #turbolinks removal
-gem 'turbolinks'
-
 #carrierwave
 gem 'carrierwave', '>=1.0.0rc', '<2.0'
 
 #for amazon s3
 gem "fog"
+gem 'mini_magick', '~> 4.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -68,4 +67,3 @@ gem "fog"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
