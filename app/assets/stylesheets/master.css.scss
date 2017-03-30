@@ -26,7 +26,7 @@ Nav Bar
   color: snow;
 }
 
-.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: black;
 }
@@ -37,7 +37,7 @@ Nav Bar
 
 i.glyphicon.glyphicon-plus-sign::before {
   padding-right: 10px;
-  
+
 }
 
 a.btn.btn-default:hover {
@@ -102,7 +102,7 @@ Pagination
 .pagination {
   background-color: fff;
   text-align: center;
- 
+
 }
 
 .pagination a {
@@ -145,7 +145,7 @@ Body
 .joinhere a {
   color: black;
   text-decoration: none;
-  
+
 }
 
 .joinhere a {
@@ -201,14 +201,14 @@ body {
 .end {
   background-color: #1F2629;
   color: snow;
+  height: 150px;
+  margin-top: 100px;
 }
 
 
- .container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -331,24 +331,11 @@ Viositor Images
 .booyah-box-photo {
   color: black;
 }
- 
+
 
 .img-responsive {
     width: 100%;
 }
-
-
-/*****************************
-Footer
-*****************************/
-
-.pga img {
-  height: 100px;
-  background: #1F2629;
-  color: #1F2629;
-}
-
-
 
 /*****************************
 User Page
@@ -365,8 +352,8 @@ Carousel
 *****************************/
 
 .carousel-inner > .item >img, .carousel-inner >.item > a > img {
-  object-fit: cover; 
-  overflow: hidden; 
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .carousel {
@@ -391,9 +378,4 @@ Captions
   font-family: 'quicksandregular';
   font-weight: 200;
   font-size: 1.15em;
-  }
-
-
-
-
-
+}
